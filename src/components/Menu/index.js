@@ -1,19 +1,21 @@
 import React from "react"
 
+import { Link } from "gatsby"
+
 import "./menu.css"
 
 const Menu = ({ title }) => {
   return (
     <header>
       <h3 className="nav-brand">
-        <a href={`/`}>{title}</a>
+        <Link to="/">{title}</Link>
       </h3>
       <ul>
         <li className="nav-item">
-          <a href={`/about`}>About</a>
+          <Link to="/about">About</Link>
         </li>
         <li className="nav-item">
-          <a href={`/contact`}>Contact</a>
+          <Link to="/contact">Contact</Link>
         </li>
       </ul>
     </header>
